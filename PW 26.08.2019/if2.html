@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function soma(){
+        var n1=parseFloat(document.f1.n1.value)
+        var n2=parseFloat(document.f1.n2.value)
+        media=(n1+n2)/2
+        document.getElementById("soma").innerHTML ="Resultado " + media;
+        document.getElementById("reprovado").style.color="red";
+        document.getElementById("podepassar").style.color="blue";
+        if(media >=7){
+            document.getElementById("podepassar").innerHTML="APROVADO!";
+        }else{
+            document.getElementById("reprovado").innerHTML="Reportado!"
+        }
+        }
+    </script>
+    <title>If</title>
+</head>
+<body>
+    <form name="f1" action="">
+        Nota 1: <input type="text" name="n1"/><br>
+        Nota 2: <input type="text" name="n2"/><br>
+        <p id="soma"></p>
+        <p id="podepassar"></p>
+        <p id="reprovado"></p>
+    </form>
+    <button onclick="soma()">Calcular Média</button>
+</body>
+</html>
