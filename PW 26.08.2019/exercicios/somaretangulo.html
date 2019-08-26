@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+            function soma(){
+                var v1 = parseFloat(document.f1.v1.value);
+                var v2 = parseFloat(document.f1.v2.value);
+                var area = v1*v2
+            document.getElementById("total").innerHTML ="Resultado " + area;
+                }
+        </script>
+    </head>
+    <body>
+        <form name="f1" action="">
+            Valor Base:<input type="text" name="v1"/><br>
+            Valor Altura:<input type="text" name="v2"/><br>
+            <p id="total"></p>
+            
+        </form>
+        <button onclick="soma()">Efetuar a Area</button>
+    </body>
+</html>

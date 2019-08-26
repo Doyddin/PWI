@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+     <meta charset="UTF-8">
+          <head>
+               <script>
+                function peso(){
+                     var pesoat=parseFloat(document.f1.pesoat.value)
+                     var engroda= pesoat*0.15 + pesoat
+                     var esmagrece= pesoat - pesoat*0.20 
+                     document.getElementById("total").innerHTML ="Peso se engordar 15%: " + engroda + ", e peso se emagrecer 20%: " + esmagrece;
+                }
+               </script>
+     </head>
+          <body>
+               <form name="f1" action="">
+                    Seu Peso atual:<input type="text" name="pesoat"/><br>
+                    <p id="total"></p>
+               </form>
+               <button onclick="peso()">Calcular</button>
+     </body>
+</html>

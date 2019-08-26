@@ -1,0 +1,22 @@
+<html>
+     <meta charset="UTF-8">
+    <head>
+        <script>
+            function soma(){
+                var v1 = parseFloat(document.f1.v1.value);
+                var v2 = parseFloat(document.f1.v2.value);
+                var dolar = v1/v2
+            document.getElementById("total").innerHTML ="Resultado " + dolar;
+                }
+        </script>
+    </head>
+    <body>
+        <form name="f1" action="">
+            Quantidade de Reais para ser trocado:<input type="text" name="v1"/><br>
+            Valor do Dólar de atualmente:<input type="text" name="v2"/><br>
+            <p id="total"></p>
+            
+        </form>
+        <button onclick="soma()">Trocar para dólar</button>
+    </body>
+</html>

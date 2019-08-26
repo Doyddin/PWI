@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <script>
+      function maior(){
+          var v1 = parseFloat(document.f1.v1.value) 
+          var maior = v1
+          var v2 = parseFloat(document.f1.v2.value)
+          if(maior<v2){
+               maior = v2
+          }
+          var v3 = parseFloat(document.f1.v3.value)
+          if(maior<v3){
+               maior=v3
+          }
+          document.getElementById("maior").innerHTML=("O maior é: "+maior)
+     }
+     </script>
+</head>
+<body>
+     <form name="f1" action="">
+          Valor 1:<input type="text" name="v1"><br>
+          Valor 2:<input type="text" name="v2"><br>
+          Valor 3:<input type="text" name="v3"><br>
+          <p id="maior"></p>
+     </form>
+     <button onclick="maior()">Mostrar</button>
+</body>
+</html>

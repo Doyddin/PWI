@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <script>
+          function somaa(){
+               var v1=parseFloat(document.f1.v1.value)
+               var v2=parseFloat(document.f1.v2.value)
+               var soma = v1+v2
+               if(soma > 0){
+                    document.getElementById("kkkko").innerHTML="O valor é Positivo!"
+               }
+               if(soma < 0){
+                    document.getElementById("kkkki").innerHTML="O valor Negativo!"
+               }
+               if(soma==0){
+                    document.getElementById("kkkkn").innerHTML="O valor é nulo!"
+               }
+          }
+     </script>
+</head>
+<body>
+     <form name="f1" action="">
+          Valor 1:<input type="text" name="v1"><br>
+          Valor 2:<input type="text" name="v2"><br>
+          <p id="kkkko"></p>
+          <p id="kkkki"></p>
+          <p id="kkkkn"></p>
+     </form>
+     <button onclick="somaa()">Somar</button>
+</body>
+</html>
