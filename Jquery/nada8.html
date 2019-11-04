@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>Exemplos de jQuery</title>
+     <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+     <style>
+          body{
+          background-color: rgb(44, 220, 236)
+          }
+     </style>
+     <script>    
+          $(document).ready(function(){
+               $("h1").hide(10);
+               $("button").click(function (){
+                    $("p").fadeOut(5000);
+               });
+               $("button").click(function(){
+                    $("h1").show(15000);
+                    $("button").fadeOut(5000);
+                    $(".classe").hide(20000);
+               })
+          });
+     </script>
+</head>
+<body>
+     <h2 class="classe">Pagina 302155</h2><br>
+     <p>N FAZ ISSO</p><br>
+     <p>NÃO CLICA NO BUTÃO</p><br>
+     <h1 class="classe">SEU MONSTRO</h1>
+     <button>Não clica em mim!</button><br>
+</body>
+</html>

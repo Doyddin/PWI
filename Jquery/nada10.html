@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>Exemplos de jQuery</title>
+     <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+     <style>
+          body{
+          background-color: rgb(44, 220, 236)
+          }
+     </style>
+     <script>    
+          $(document).ready(function(){
+               $("#b1").click(function (){
+                    alert("TECSTO: " + $("p").text());
+               });
+               $("#b2").click(function (){
+                    alert("hastaml: " + $("p").html());
+               });
+          });
+     </script>
+</head>
+<body>
+     <p>BATATATAKA KAEKAKAKAEAJIFJDIJASO <b>banana</b></p>
+     <button id="b2">harjasml</button><br>
+     <button id="b1">teto</button><br>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>Exemplos de jQuery</title>
+     <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+     <style>
+          #div1{
+          background-color: rgb(44, 220, 236)
+          }
+     </style>
+     <script>    
+          $(document).ready(function(){
+               $("#i").click(function(){
+                    $("#div1").width(300);
+                    $("#div1").height(300);
+               })
+               $("#d").click(function (){  
+                    $("#div1").width(500);
+                    $("#div1").height(500);
+               })
+          })
+          </script>
+     </head>
+     <body>
+          <div id="div1">Porra nenhuma.</div>
+     <button id="i">dedo </button>
+     <button id="d"> nervoso </button>
+
+</body>
+</html>
