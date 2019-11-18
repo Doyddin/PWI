@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Exemplos de jquery</title>
+<style>
+    .card{
+        width: 130px;
+        height: 130px;
+    }
+    #c{
+        width:430px;
+        height: 561px;
+    }
+</style>
+<script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+<script>
+    /*
+$(document).ready(function(){
+    $("#x").click(function(){
+        $("#c").attr("src", "cores/aluz.png");
+    });    
+    $("#i").click(function(){
+        $("#c").attr("src", "cores/banco.png");
+    });    
+    $("#p").click(function(){
+        $("#c").attr("src", "cores/amalo.png");
+    });    
+    $("#k").click(function(){
+        $("#c").attr("src", "cores/cor de banana.png");
+    });    
+    $("#o").click(function(){
+        $("#c").attr("src", "cores/cor do igor.png");
+    });
+    $("#u").click(function(){
+        $("#c").attr("src","cores/nada.png");
+    })    
+});
+*/
+$(document).ready(function(){
+    $(".card").click(function(){
+        var caminho= $(this).attr("src");
+        $("#c").attr("src",caminho);
+    })
+})
+</script>
+</head>
+<h1>Bienal de Ate Modena</h1>
+<body>
+        <img id="c" src="cores/nada.png"><br>
+        <img class="card" src="cores/banco.png" alt="Nada">
+        <img class="card" src="cores/cor de banana.png" alt="Nada">
+        <img class="card" src="cores/aluz.png" alt="Nada">
+        <img class="card" src="cores/amalo.png" alt="Nada">
+        <img class="card" src="cores/cor do igor.png" alt="Nada">
+        <img class="card" src="cores/nada.png">
+</body>
+</html>

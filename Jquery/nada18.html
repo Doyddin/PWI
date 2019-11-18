@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>Exemplos de jQuery</title>
+     <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+     <style type="text/css">
+          .vermelho{
+               color:green
+          }
+          .borda{
+               border: solid orangered
+          }
+     </style>
+     <script>    
+          $(document).ready(function(){
+               $(".b1").click(function(){
+                    $("h1").addClass("vermelho borda");
+               });
+               $(".b").click(function(){
+                    $("h1").removeClass("borda");
+               })
+               $("button").click(function(){
+                    $("h1").fadeOut(10000)
+               })
+               });
+     </script>
+</head>
+<body>
+     <h1>Pagina 2</h1><br>
+     <h1>BANANA</h1>
+     <h1>BATATA</h1>
+     <button class="b1"><pre>     </pre></button>
+          <button class="b"><pre>     </pre></button>
+</body>
+</html>

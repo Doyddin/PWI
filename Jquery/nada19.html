@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>Exemplos de jQuery</title>
+     <script src="js/jquery-3.4.1.js" type="text/javascript"></script>
+     <style type="text/css">
+          h1{
+               color:green
+          }
+          .borda{
+               border: solid orangered
+          }
+     </style>
+     <script>    
+          $(document).ready(function(){
+               $(".b").click(function(){
+                    $("h1").removeClass("borda");
+               })
+               $("button").click(function(){
+                    $("h1").fadeOut(10000)
+               })
+               });
+     </script>
+</head>
+<body>
+     <h1 class="borda">Pagina 2</h1>
+     <h1 class="borda">BANANA</h1>
+     <h1 class="borda">BATATA</h1>
+          <button class="b"><pre>     </pre></button>
+</body>
+</html>
