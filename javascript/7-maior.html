@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function dolar(){
+            var n1=parseFloat(document.f1.n1.value)
+            var maior=n1
+            var n2=parseFloat(document.f1.n2.value)
+            if(maior<n2){
+                maior=n2
+            }
+            var n3=parseFloat(document.f1.n3.value)
+            if(maior<n3){
+                maior=n3
+            }
+            var n4=parseFloat(document.f1.n4.value)
+            if(maior<n4){
+                maior=n4
+            }
+            document.getElementById("escreva").innerHTML="O maior valor é: "+ maior
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="f1">
+        Informe o 1º valor:<input type="text" name="n1"><br>
+        Informe o 2º valor:<input type="text" name="n2"><br>
+        Informe o 3º valor<input type="text" name="n3"><br>
+        Informe o 4º valor<input type="text" name="n4"><br>
+    </form>
+    <p id="escreva"></p>
+    <button onclick="dolar()">Mostrar</button>
+</body>
+</html>

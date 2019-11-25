@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+    function peso(){
+        var peso=parseFloat(document.f1.peso.value)
+        var altura=parseFloat(document.f1.alt.value)
+        var pesoideal = peso / altura
+        var porcentag = pesoideal * 0.15
+        var porcentam= pesoideal * 0.20
+        var pesoidealg=pesoideal + porcentag
+        var pesoidealm=pesoideal - porcentam
+        document.getElementById("escreva").innerHTML="Se engordar 15%: "+pesoidealg
+        document.getElementById("escreva2").innerHTML="Se emagrecer 20%: "+pesoidealm 
+    }
+    </script>
+</head>
+<body>
+    <form action="" name="f1">
+        Informe seu peso: <input type="text" name="peso"><br>
+        Informe sua altura: <input type="text" name="alt"><br>
+        <p id="escreva"></p>
+        <p id="escreva2"></p>
+    </form>
+    <button onclick="peso()">Calcular peso</button>
+</body>
+</html>

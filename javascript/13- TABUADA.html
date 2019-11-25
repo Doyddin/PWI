@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+    function clique(){
+        var n=parseFloat(document.f1.n.value)
+        var tab=0
+        if(n>=0, n<=10){
+            while(tab<=10){
+                document.write(n*tab + "<br>")
+                tab++
+        }
+        }else{
+            document.getElementById("esquerva").innerHTML=("Informe um número entre, e inclusive, 0 a 10")
+        }
+    }
+    </script>
+</head>
+<body>
+    <form action="" name="f1">
+        Informe um número:<input type="text" name="n">
+    </form>
+    <p id="esquerva"></p>
+    <button onclick="clique()"> Clica em mim!! </button>
+</body>
+</html>

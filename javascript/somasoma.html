@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <title>
+        
+    </title>
+    <script>
+        function soma(){
+            var n1=parseFloat(document.f1.n1.value)
+            var n2=parseFloat(document.f1.n2.value)
+            var soma=n1+n2
+            if(soma<0){
+                document.getElementById("escreva").innerHTML="O resultado é negativo"
+            }
+            if(soma>0){
+                document.getElementById("escreva").innerHTML="O resultado é positivo"
+            }
+            if(soma==0){
+                document.getElementById("escreva").innerHTML="O resultado é nulo"
+            }
+        }
+    </script>    
+    </head>
+    <body>
+        <form action="" name="f1">
+            Informe o primeiro número:<input type="text" name="n1"><br>
+            informe o segundo número:<input type="text" name="n2"><br>
+        </form>
+        <p id="escreva"></p>
+        <button onclick="soma()">122    </button>
+    </body>
+</html>

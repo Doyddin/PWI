@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function media(){
+            var n1=parseFloat(document.f1.n1.value)
+            var n2=parseFloat(document.f1.n2.value)
+            var n3=parseFloat(document.f1.n3.value)
+            var n4=parseFloat(document.f1.n4.value)
+            var media=(n1+n2+n3+n4)/4
+            document.getElementById("escreva").innerHTML=media
+            if(media<5){
+                document.getElementById("confirmacao").innerHTML="REPROVADO!"
+            }
+            if(media>=7){
+                document.getElementById("confirmacao").innerHTML="APROVADO!"
+            }
+            else{
+                document.getElementById("confirmacao").innerHTML="EXAME!"
+            }
+        }
+    </script>
+</head>
+    <body>
+        <form action="" name="f1">
+        Informe a primeira nota:<input type="text" name="n1"><br>
+        Informe a segunda nota:<input type="text" name="n2"><br>
+        Informe a terceira nota: <input type="text" name="n3"><br>
+        Informe a quarta nota:<input type="text" name="n4"><br>
+    </form>
+        <p id="escreva"></p>
+        <p id="confirmacao"></p>
+        <button onclick="media()">Média</button>
+    </body>
+</html>

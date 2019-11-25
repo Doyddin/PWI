@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+        <meta charset="UTF-8">
+<head>
+        <script>
+            function idade(){
+                    var idade1=parseFloat(document.f1.v1.value)
+                    var idade2=parseFloat(document.f1.v2.value)
+                    var idmedia=(idade1+idade2)/2
+                    document.getElementById("escreva").innerHTML=idmedia
+            }
+        </script>
+</head>
+<body>
+    <form action="" name="f1">
+        Informe a primeira Idade:<input type="text" name="v1"><br>
+        Informe a segunda Idade:<input type="text" name="v2"><br>      
+    </form>
+    <p id="escreva"></p>
+    <button onclick="idade()">Calcular Idade</button>
+</body>
+</html>

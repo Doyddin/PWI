@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+        <meta charset="UTF-8">
+<head>
+        <script>
+            function area(){
+                   var base= parseFloat(document.f1.base.value)
+                   var altura= parseFloat(document.f1.altura.value)
+                   var area= base*altura
+                   document.getElementById("escreva").innerHTML=area  
+            }
+ 
+        </script>
+</head>
+<body>
+    <form action="" name="f1">
+        Informe a base:<input type="text" name="base"><br>
+        Informe a altura:<input type="text" name="altura"><br>
+    </form>
+    <p id="escreva"></p>
+    <button onclick="area()">Area</button>
+</body>
+</html>

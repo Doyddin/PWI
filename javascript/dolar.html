@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function dolar(){
+            var real=parseFloat(document.f1.real.value)
+            var dolar=parseFloat(document.f1.dolar.value)
+            var cotado=real/dolar
+            document.getElementById("escreva").innerHTML="O valor em dólares é: "+ cotado 
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="f1">
+        Informe o Valor em reais:<input type="text" name="real"><br>
+        Informe a cotação atual do dólar:<input type="text" name="dolar"><br>
+    </form>
+    <p id="escreva"></p>
+    <button onclick="dolar()">Cotar</button>
+</body>
+</html>

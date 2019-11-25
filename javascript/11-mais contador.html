@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function exibe(){
+            var i=1;
+            var n=parseFloat(document.f1.n.value)
+            if(n>0){
+                while (i <= n) {
+                        document.write(i + "<br>");
+                        i++;
+            }
+            }else{
+                    document.getElementById("mostrar").innerHTML=("Recarrega a pagina, e digite um número maior que 0")
+            }
+        }
+        
+    </script>
+</head>
+    <body>
+        <form action="" name="f1">
+                Informe o Valor:<input type="text" name="n">
+        </form>
+        <p id="mostrar"></p>
+                <button onclick="exibe()">Duvido clicar</button>
+    </body>
+</html>
