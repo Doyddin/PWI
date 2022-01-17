@@ -1,10 +1,5 @@
 # Desafio de Estagio
-Primeiro Projeto usando controle de Versão
 
-![Logo](https://github.com/favicon.ico)
+O bando de dados utilizado esta presente no arquivo de texto bancojacto.txt.
 
-Ajuda: [Git](https://git-scm.com/doc)
-
-
-
-
+Foi utilizado a linguagem PHP utilizando as funções de Mysqli.
